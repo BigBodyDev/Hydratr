@@ -3,27 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE09E90C24465A7800D9B22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09E90B24465A7800D9B22B /* AppDelegate.swift */; };
-		CE09E90E24465A7900D9B22B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09E90D24465A7900D9B22B /* SceneDelegate.swift */; };
-		CE09E91024465A7900D9B22B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09E90F24465A7900D9B22B /* ContentView.swift */; };
-		CE09E91224465B8900D9B22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09E91124465B8900D9B22B /* Assets.xcassets */; };
+		09B15CB9069C891AEA637299 /* Pods_Hydratr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FFC103E8A1075ED61590F8 /* Pods_Hydratr.framework */; };
 		CE09E91524465B8900D9B22B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09E91424465B8900D9B22B /* Preview Assets.xcassets */; };
-		CE09E91824465B8900D9B22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09E91624465B8900D9B22B /* LaunchScreen.storyboard */; };
+		CE97649B24493FA9006E8814 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97648E24493FA8006E8814 /* Time.swift */; };
+		CE97649C24493FA9006E8814 /* WaterReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97648F24493FA8006E8814 /* WaterReminder.swift */; };
+		CE97649D24493FA9006E8814 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649024493FA8006E8814 /* ReminderManager.swift */; };
+		CE97649E24493FA9006E8814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE97649124493FA8006E8814 /* Assets.xcassets */; };
+		CE97649F24493FA9006E8814 /* MainHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649324493FA8006E8814 /* MainHost.swift */; };
+		CE9764A024493FA9006E8814 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE97649424493FA8006E8814 /* GoogleService-Info.plist */; };
+		CE9764A124493FA9006E8814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE97649624493FA8006E8814 /* LaunchScreen.storyboard */; };
+		CE9764A224493FA9006E8814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649824493FA9006E8814 /* AppDelegate.swift */; };
+		CE9764A324493FA9006E8814 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649924493FA9006E8814 /* SceneDelegate.swift */; };
+		CE9764A52449496A006E8814 /* ReminderEditHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764A42449496A006E8814 /* ReminderEditHost.swift */; };
+		CE9764A7244950BB006E8814 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764A6244950BB006E8814 /* BackgroundView.swift */; };
+		CE9764A9244950DD006E8814 /* ReminderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764A8244950DD006E8814 /* ReminderRow.swift */; };
+		CE9764AB24495ABF006E8814 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764AA24495ABF006E8814 /* GradientView.swift */; };
+		CE9764AD244964BA006E8814 /* ChangeRemindersText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764AC244964BA006E8814 /* ChangeRemindersText.swift */; };
+		CE9764B1244A35D3006E8814 /* HydratrHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764B0244A35D3006E8814 /* HydratrHost.swift */; };
+		CE9764B3244A36C9006E8814 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9764B2244A36C9006E8814 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53E420DAB07D3E751DFC1909 /* Pods-Hydratr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydratr.release.xcconfig"; path = "Target Support Files/Pods-Hydratr/Pods-Hydratr.release.xcconfig"; sourceTree = "<group>"; };
+		68FFC103E8A1075ED61590F8 /* Pods_Hydratr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydratr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEB2F0B3F8C535D9D09B9C0 /* Pods-Hydratr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydratr.debug.xcconfig"; path = "Target Support Files/Pods-Hydratr/Pods-Hydratr.debug.xcconfig"; sourceTree = "<group>"; };
 		CE09E90824465A7700D9B22B /* Hydratr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydratr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE09E90B24465A7800D9B22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE09E90D24465A7900D9B22B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE09E90F24465A7900D9B22B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CE09E91124465B8900D9B22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE09E91424465B8900D9B22B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CE09E91724465B8900D9B22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE09E91924465B8900D9B22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE97648E24493FA8006E8814 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		CE97648F24493FA8006E8814 /* WaterReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterReminder.swift; sourceTree = "<group>"; };
+		CE97649024493FA8006E8814 /* ReminderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		CE97649124493FA8006E8814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE97649324493FA8006E8814 /* MainHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHost.swift; sourceTree = "<group>"; };
+		CE97649424493FA8006E8814 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE97649724493FA8006E8814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE97649824493FA9006E8814 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE97649924493FA9006E8814 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE9764A42449496A006E8814 /* ReminderEditHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditHost.swift; sourceTree = "<group>"; };
+		CE9764A6244950BB006E8814 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		CE9764A8244950DD006E8814 /* ReminderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRow.swift; sourceTree = "<group>"; };
+		CE9764AA24495ABF006E8814 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CE9764AC244964BA006E8814 /* ChangeRemindersText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRemindersText.swift; sourceTree = "<group>"; };
+		CE9764B0244A35D3006E8814 /* HydratrHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydratrHost.swift; sourceTree = "<group>"; };
+		CE9764B2244A36C9006E8814 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B15CB9069C891AEA637299 /* Pods_Hydratr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D85B184EE6A3C32999CE331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68FFC103E8A1075ED61590F8 /* Pods_Hydratr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE09E8FF24465A7000D9B22B = {
 			isa = PBXGroup;
 			children = (
 				CE09E90A24465A7700D9B22B /* Hydratr */,
 				CE09E90924465A7700D9B22B /* Products */,
+				E0C24CE56C4C64161AEBD3AF /* Pods */,
+				4D85B184EE6A3C32999CE331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +93,13 @@
 		CE09E90A24465A7700D9B22B /* Hydratr */ = {
 			isa = PBXGroup;
 			children = (
-				CE09E90B24465A7800D9B22B /* AppDelegate.swift */,
-				CE09E90D24465A7900D9B22B /* SceneDelegate.swift */,
-				CE09E90F24465A7900D9B22B /* ContentView.swift */,
-				CE09E91124465B8900D9B22B /* Assets.xcassets */,
-				CE09E91624465B8900D9B22B /* LaunchScreen.storyboard */,
+				CE97648D24493FA8006E8814 /* Model */,
+				CE97649A24493FA9006E8814 /* View */,
+				CE97649224493FA8006E8814 /* Host */,
+				CE97649524493FA8006E8814 /* Support */,
+				CE97649124493FA8006E8814 /* Assets.xcassets */,
 				CE09E91924465B8900D9B22B /* Info.plist */,
+				CE97649424493FA8006E8814 /* GoogleService-Info.plist */,
 				CE09E91324465B8900D9B22B /* Preview Content */,
 			);
 			path = Hydratr;
@@ -75,6 +113,57 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE97648D24493FA8006E8814 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE97648E24493FA8006E8814 /* Time.swift */,
+				CE97648F24493FA8006E8814 /* WaterReminder.swift */,
+				CE97649024493FA8006E8814 /* ReminderManager.swift */,
+				CE9764B2244A36C9006E8814 /* BluetoothManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE97649224493FA8006E8814 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				CE97649324493FA8006E8814 /* MainHost.swift */,
+				CE9764A42449496A006E8814 /* ReminderEditHost.swift */,
+				CE9764B0244A35D3006E8814 /* HydratrHost.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		CE97649524493FA8006E8814 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CE97649624493FA8006E8814 /* LaunchScreen.storyboard */,
+				CE97649824493FA9006E8814 /* AppDelegate.swift */,
+				CE97649924493FA9006E8814 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CE97649A24493FA9006E8814 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9764A6244950BB006E8814 /* BackgroundView.swift */,
+				CE9764AA24495ABF006E8814 /* GradientView.swift */,
+				CE9764A8244950DD006E8814 /* ReminderRow.swift */,
+				CE9764AC244964BA006E8814 /* ChangeRemindersText.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0C24CE56C4C64161AEBD3AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEEB2F0B3F8C535D9D09B9C0 /* Pods-Hydratr.debug.xcconfig */,
+				53E420DAB07D3E751DFC1909 /* Pods-Hydratr.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE09E91C24465B8900D9B22B /* Build configuration list for PBXNativeTarget "Hydratr" */;
 			buildPhases = (
+				A0A69A94B1AA060B33B7A8F8 /* [CP] Check Pods Manifest.lock */,
 				CE09E90424465A7400D9B22B /* Sources */,
 				CE09E90524465A7400D9B22B /* Frameworks */,
 				CE09E90624465A7400D9B22B /* Resources */,
+				740F1B760BB4C1C77127BC1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,32 +224,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE09E91824465B8900D9B22B /* LaunchScreen.storyboard in Resources */,
+				CE97649E24493FA9006E8814 /* Assets.xcassets in Resources */,
+				CE9764A124493FA9006E8814 /* LaunchScreen.storyboard in Resources */,
 				CE09E91524465B8900D9B22B /* Preview Assets.xcassets in Resources */,
-				CE09E91224465B8900D9B22B /* Assets.xcassets in Resources */,
+				CE9764A024493FA9006E8814 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		740F1B760BB4C1C77127BC1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A69A94B1AA060B33B7A8F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hydratr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE09E90424465A7400D9B22B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE09E90C24465A7800D9B22B /* AppDelegate.swift in Sources */,
-				CE09E90E24465A7900D9B22B /* SceneDelegate.swift in Sources */,
-				CE09E91024465A7900D9B22B /* ContentView.swift in Sources */,
+				CE97649F24493FA9006E8814 /* MainHost.swift in Sources */,
+				CE97649D24493FA9006E8814 /* ReminderManager.swift in Sources */,
+				CE9764B3244A36C9006E8814 /* BluetoothManager.swift in Sources */,
+				CE9764AB24495ABF006E8814 /* GradientView.swift in Sources */,
+				CE9764A7244950BB006E8814 /* BackgroundView.swift in Sources */,
+				CE9764A52449496A006E8814 /* ReminderEditHost.swift in Sources */,
+				CE9764AD244964BA006E8814 /* ChangeRemindersText.swift in Sources */,
+				CE97649B24493FA9006E8814 /* Time.swift in Sources */,
+				CE9764B1244A35D3006E8814 /* HydratrHost.swift in Sources */,
+				CE9764A224493FA9006E8814 /* AppDelegate.swift in Sources */,
+				CE97649C24493FA9006E8814 /* WaterReminder.swift in Sources */,
+				CE9764A324493FA9006E8814 /* SceneDelegate.swift in Sources */,
+				CE9764A9244950DD006E8814 /* ReminderRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE09E91624465B8900D9B22B /* LaunchScreen.storyboard */ = {
+		CE97649624493FA8006E8814 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE09E91724465B8900D9B22B /* Base */,
+				CE97649724493FA8006E8814 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -282,6 +426,7 @@
 		};
 		CE09E91D24465B8900D9B22B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEEB2F0B3F8C535D9D09B9C0 /* Pods-Hydratr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +434,7 @@
 				DEVELOPMENT_TEAM = X2W4R5VT29;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Hydratr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,12 +442,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devingreen.Hydratr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE09E91E24465B8900D9B22B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E420DAB07D3E751DFC1909 /* Pods-Hydratr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +456,7 @@
 				DEVELOPMENT_TEAM = X2W4R5VT29;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Hydratr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devingreen.Hydratr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

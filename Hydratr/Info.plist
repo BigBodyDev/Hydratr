@@ -46,8 +46,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -56,5 +54,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Connect to water bottle</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Connect to water bottle</string>
 </dict>
 </plist>
