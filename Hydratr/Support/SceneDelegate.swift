@@ -31,10 +31,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: mainHost
-                .environmentObject(ReminderManager()))
+                .environmentObject(ReminderManager.shared))
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        NotificationManager.shared.removeDeliveredNotifications()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +49,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
+        NotificationManager.shared.removeDeliveredNotifications()
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -57,6 +61,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        
+        NotificationManager.shared.removeDeliveredNotifications()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

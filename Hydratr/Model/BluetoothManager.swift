@@ -8,7 +8,8 @@
 
 import Foundation
 import CoreBluetooth
-import CoreLocation
+import Firebase
+import FirebaseDatabase
 
 enum Proximity: Int{
     case immediate = 0
@@ -74,8 +75,12 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         if peripheral.identifier.uuidString == "4C238FBF-7566-FF05-357F-F4759025E5A5"{
-            if Int(truncating: RSSI) > -25{
+            if Int(truncating: RSSI) > -28{
                 BluetoothViewer.shared.changeProximity(proximity: .immediate)
+                
+                Database.database().reference().child("Manager_Data").child("buzzer_active").setValue(false) { (error, reference) in
+                    print(reference.description())
+                }
             }else if Int(truncating: RSSI) > -65{
                 BluetoothViewer.shared.changeProximity(proximity: .near)
             }else {

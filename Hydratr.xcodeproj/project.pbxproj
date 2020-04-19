@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		09B15CB9069C891AEA637299 /* Pods_Hydratr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FFC103E8A1075ED61590F8 /* Pods_Hydratr.framework */; };
 		CE09E91524465B8900D9B22B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09E91424465B8900D9B22B /* Preview Assets.xcassets */; };
+		CE321FB6244AD2DC00CF3B7B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE321FB5244AD2DC00CF3B7B /* NotificationManager.swift */; };
+		CE321FBB244B932300CF3B7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE321FBA244B932300CF3B7B /* GoogleService-Info.plist */; };
 		CE97649B24493FA9006E8814 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97648E24493FA8006E8814 /* Time.swift */; };
 		CE97649C24493FA9006E8814 /* WaterReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97648F24493FA8006E8814 /* WaterReminder.swift */; };
 		CE97649D24493FA9006E8814 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649024493FA8006E8814 /* ReminderManager.swift */; };
 		CE97649E24493FA9006E8814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE97649124493FA8006E8814 /* Assets.xcassets */; };
 		CE97649F24493FA9006E8814 /* MainHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649324493FA8006E8814 /* MainHost.swift */; };
-		CE9764A024493FA9006E8814 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE97649424493FA8006E8814 /* GoogleService-Info.plist */; };
 		CE9764A124493FA9006E8814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE97649624493FA8006E8814 /* LaunchScreen.storyboard */; };
 		CE9764A224493FA9006E8814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649824493FA9006E8814 /* AppDelegate.swift */; };
 		CE9764A324493FA9006E8814 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97649924493FA9006E8814 /* SceneDelegate.swift */; };
@@ -34,12 +35,14 @@
 		CE09E90824465A7700D9B22B /* Hydratr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydratr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE09E91424465B8900D9B22B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE09E91924465B8900D9B22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE321FB5244AD2DC00CF3B7B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CE321FB9244B90F300CF3B7B /* Hydratr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hydratr.entitlements; sourceTree = "<group>"; };
+		CE321FBA244B932300CF3B7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE97648E24493FA8006E8814 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		CE97648F24493FA8006E8814 /* WaterReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterReminder.swift; sourceTree = "<group>"; };
 		CE97649024493FA8006E8814 /* ReminderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
 		CE97649124493FA8006E8814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE97649324493FA8006E8814 /* MainHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHost.swift; sourceTree = "<group>"; };
-		CE97649424493FA8006E8814 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE97649724493FA8006E8814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE97649824493FA9006E8814 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE97649924493FA9006E8814 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,13 +96,14 @@
 		CE09E90A24465A7700D9B22B /* Hydratr */ = {
 			isa = PBXGroup;
 			children = (
+				CE321FB9244B90F300CF3B7B /* Hydratr.entitlements */,
 				CE97648D24493FA8006E8814 /* Model */,
 				CE97649A24493FA9006E8814 /* View */,
 				CE97649224493FA8006E8814 /* Host */,
 				CE97649524493FA8006E8814 /* Support */,
 				CE97649124493FA8006E8814 /* Assets.xcassets */,
 				CE09E91924465B8900D9B22B /* Info.plist */,
-				CE97649424493FA8006E8814 /* GoogleService-Info.plist */,
+				CE321FBA244B932300CF3B7B /* GoogleService-Info.plist */,
 				CE09E91324465B8900D9B22B /* Preview Content */,
 			);
 			path = Hydratr;
@@ -120,6 +124,7 @@
 				CE97648F24493FA8006E8814 /* WaterReminder.swift */,
 				CE97649024493FA8006E8814 /* ReminderManager.swift */,
 				CE9764B2244A36C9006E8814 /* BluetoothManager.swift */,
+				CE321FB5244AD2DC00CF3B7B /* NotificationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,7 +180,7 @@
 				CE09E90424465A7400D9B22B /* Sources */,
 				CE09E90524465A7400D9B22B /* Frameworks */,
 				CE09E90624465A7400D9B22B /* Resources */,
-				740F1B760BB4C1C77127BC1A /* [CP] Embed Pods Frameworks */,
+				AC194BE6F4F3A70D863D7715 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,30 +232,13 @@
 				CE97649E24493FA9006E8814 /* Assets.xcassets in Resources */,
 				CE9764A124493FA9006E8814 /* LaunchScreen.storyboard in Resources */,
 				CE09E91524465B8900D9B22B /* Preview Assets.xcassets in Resources */,
-				CE9764A024493FA9006E8814 /* GoogleService-Info.plist in Resources */,
+				CE321FBB244B932300CF3B7B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		740F1B760BB4C1C77127BC1A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A0A69A94B1AA060B33B7A8F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +261,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC194BE6F4F3A70D863D7715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hydratr/Pods-Hydratr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE321FB6244AD2DC00CF3B7B /* NotificationManager.swift in Sources */,
 				CE97649F24493FA9006E8814 /* MainHost.swift in Sources */,
 				CE97649D24493FA9006E8814 /* ReminderManager.swift in Sources */,
 				CE9764B3244A36C9006E8814 /* BluetoothManager.swift in Sources */,
@@ -429,6 +435,7 @@
 			baseConfigurationReference = BEEB2F0B3F8C535D9D09B9C0 /* Pods-Hydratr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hydratr/Hydratr.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Hydratr/Preview Content\"";
 				DEVELOPMENT_TEAM = X2W4R5VT29;
@@ -439,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devingreen.Hydratr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devingreen.Hydratr-H2O";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -451,6 +458,7 @@
 			baseConfigurationReference = 53E420DAB07D3E751DFC1909 /* Pods-Hydratr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hydratr/Hydratr.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Hydratr/Preview Content\"";
 				DEVELOPMENT_TEAM = X2W4R5VT29;
@@ -461,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devingreen.Hydratr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devingreen.Hydratr-H2O";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

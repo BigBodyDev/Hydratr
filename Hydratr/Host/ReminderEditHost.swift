@@ -94,7 +94,6 @@ struct ReminderEditHost: View {
                     }
                 }
                 .padding(.top, 1)
-//                .edgesIgnoringSafeArea(.bottom)
                 .clipped()
                 
             }.navigationBarTitle(Text("Change Reminders"))

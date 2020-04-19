@@ -97,6 +97,6 @@ struct MainHost: View {
 struct MainHost_Previews: PreviewProvider {
     static var previews: some View {
         MainHost()
-        .environmentObject(ReminderManager())
+            .environmentObject(ReminderManager.shared)
     }
 }

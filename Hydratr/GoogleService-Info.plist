@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1045756855356-k350lc7kerf2ci7aflcg061ughdhiijb.apps.googleusercontent.com</string>
+	<string>1045756855356-jo6cvhn3rk6iflbh9o5i70ungi5p9t8k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1045756855356-k350lc7kerf2ci7aflcg061ughdhiijb</string>
+	<string>com.googleusercontent.apps.1045756855356-jo6cvhn3rk6iflbh9o5i70ungi5p9t8k</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDCjgA7X_ha9ikCFmriwgrsMi2C5atyuV0</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.devingreen.Hydratr</string>
+	<string>com.devingreen.Hydratr-H2O</string>
 	<key>PROJECT_ID</key>
 	<string>hydratr-water-reminders</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1045756855356:ios:2980027ec6680e7e4aaf39</string>
+	<string>1:1045756855356:ios:62df722d768f71204aaf39</string>
 	<key>DATABASE_URL</key>
 	<string>https://hydratr-water-reminders.firebaseio.com</string>
 </dict>

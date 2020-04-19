@@ -11,6 +11,7 @@ import SwiftUI
 struct HydratrHost: View {
     @ObservedObject var bluetooth: BluetoothViewer = BluetoothViewer.shared
     @Binding var isPresented: Bool
+    
     var body: some View {
         let proximityValues = [
             "The Hydratr is in immediate proximity",
@@ -38,16 +39,17 @@ struct HydratrHost: View {
             GeometryReader { geometry in
                 ZStack{
                     GradientView()
+                        .edgesIgnoringSafeArea(.all)
                     VStack{
                         Image(imageNames[self.bluetooth.hydratrProximity.rawValue])
                             .resizable()
                             .aspectRatio(contentMode: ContentMode.fit)
-                    VStack(spacing: 10){
-                        Text("Hydratr Status:")
-                            .font(.headline)
-                        Text(proximityValues[self.bluetooth.hydratrProximity.rawValue])
-                            .font(.caption)
-                    }.padding()
+                        VStack(spacing: 10){
+                            Text("Hydratr Status:")
+                                .font(.headline)
+                            Text(proximityValues[self.bluetooth.hydratrProximity.rawValue])
+                                .font(.caption)
+                        }.padding()
                     }
                 }.navigationBarTitle(Text("Hydratr Bottle"))
             }

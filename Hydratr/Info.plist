@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Connect to water bottle</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Connect to water bottle</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -54,15 +64,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Connect to water bottle</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Connect to water bottle</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Connect to water bottle</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Connect to water bottle</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Connect to water bottle</string>
 </dict>
 </plist>

@@ -11,11 +11,14 @@ import SwiftUI
 import FirebaseDatabase
 
 class ReminderManager: ObservableObject {
+    static let shared = ReminderManager()
+    
     @Published var loaded: Bool = false
     @Published var reminders = [WaterReminder]()
     @Published var timeInterval: Int = 0
     @Published var startTime: Time = Time(Calendar.current.date(bySettingHour: 8, minute: 0, second: 0, of: Date())!)
     @Published var maxTime: Time = Time(Calendar.current.date(bySettingHour: 22, minute: 0, second: 0, of: Date())!)
+    @Published var buzzerActive: Bool = false
     
     init(timeInterval: Int, startTime: Time, maxTime: Time, reminders: [WaterReminder]){
         self.timeInterval = timeInterval
@@ -55,6 +58,10 @@ class ReminderManager: ObservableObject {
                 
                 if let maxString = data["max_time"] as? String{
                     self.maxTime = Time(maxString)
+                }
+                
+                if let buzzerActive = data["buzzer_active"] as? Bool {
+                    self.buzzerActive = buzzerActive
                 }
             }
             
@@ -99,6 +106,7 @@ class ReminderManager: ObservableObject {
             self.reminders.append(WaterReminder(time: time))
             time = time.timeByAddingTimeInterval(TimeInterval(timeInterval))
         }
+        NotificationManager.shared.scheduleNotifications()
         save(completionHandler)
     }
     
