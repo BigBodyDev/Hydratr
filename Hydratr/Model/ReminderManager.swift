@@ -19,6 +19,7 @@ class ReminderManager: ObservableObject {
     @Published var startTime: Time = Time(Calendar.current.date(bySettingHour: 8, minute: 0, second: 0, of: Date())!)
     @Published var maxTime: Time = Time(Calendar.current.date(bySettingHour: 22, minute: 0, second: 0, of: Date())!)
     @Published var buzzerActive: Bool = false
+    @Published var remindersActive: Bool = true
     
     init(timeInterval: Int, startTime: Time, maxTime: Time, reminders: [WaterReminder]){
         self.timeInterval = timeInterval
@@ -63,6 +64,10 @@ class ReminderManager: ObservableObject {
                 if let buzzerActive = data["buzzer_active"] as? Bool {
                     self.buzzerActive = buzzerActive
                 }
+                
+                if let remindersActive = data["reminders_active"] as? Bool {
+                    self.remindersActive = remindersActive
+                }
             }
             
             managerLoaded = true
@@ -99,6 +104,14 @@ class ReminderManager: ObservableObject {
         }
     }
     
+    func toggleRemindersActive(_ completionHandler: (() -> Void)?){
+        remindersActive.toggle()
+        Database.database().reference().child("Manager_Data").child("reminders_active").setValue(remindersActive) { (error, reference) in
+            print(reference.description())
+            completionHandler?()
+        }
+    }
+    
     func createNewReminders(_ completionHandler: (() -> Void)?){
         self.reminders.removeAll()
         var time = startTime
@@ -120,6 +133,8 @@ class ReminderManager: ObservableObject {
                 "time_interval": timeInterval,
                 "start_time": startTime.dateString,
                 "max_time": maxTime.dateString,
+                "reminders_active": remindersActive,
+                "buzzer_active": buzzerActive
             ],
             "Reminders": remindersJson
         ]

@@ -20,10 +20,12 @@ struct ReminderRow: View {
                 HStack(alignment: .bottom, spacing: 5) {
                     Text(reminder.time.stringNoHrPeriod)
                         .font(.largeTitle)
+                        .foregroundColor(reminderManager.remindersActive ? .primary : .secondary)
                     
                     Text(reminder.time.hrPeriod)
                         .font(.headline)
                         .padding(.bottom, 5)
+                        .foregroundColor(reminderManager.remindersActive ? .primary : .secondary)
                 }
                 Spacer()
                 Text("Reminder \((reminderManager.reminders.firstIndex(of: reminder) ?? 0)  + 1)")

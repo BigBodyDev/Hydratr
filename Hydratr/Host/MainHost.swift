@@ -19,17 +19,31 @@ struct MainHost: View {
     
     var stack: some View{
         VStack {
-            Button(action: {
+            HStack{
+                Button(action: {
+                    
+                    self.reminderManager.toggleRemindersActive(nil)
+                }) {
+                    Image(systemName: self.$reminderManager.remindersActive.wrappedValue ? "pause.fill" : "play.fill")
+                        .imageScale(.large)
+                }
+                .padding(.top, 30)
+                .padding(.leading, 30)
                 
-                self.activeSheet = .bottle
-                self.showSheet.toggle()
-            }) {
                 Spacer()
-                Image(systemName: "dot.radiowaves.left.and.right")
-                    .imageScale(.large)
+                
+                Button(action: {
+                    
+                    self.activeSheet = .bottle
+                    self.showSheet.toggle()
+                }) {
+                    Image(systemName: "dot.radiowaves.left.and.right")
+                        .imageScale(.large)
+                }
+                .padding(.top, 30)
+                .padding(.trailing, 30)
             }
-            .padding(.top, 30)
-            .padding(.trailing, 30)
+            
             
             VStack(spacing: 15){
                 Spacer()
